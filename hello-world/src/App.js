@@ -5,10 +5,14 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <FunctionClick />
+      <ClassClick />
+      {/*<Counter />*/}
       {/* <Message /> */}
       {/* <Greet name="Bruce" heroName="Hulk">
         <p>This is children props</p>
@@ -16,8 +20,8 @@ function App() {
       <Greet name="Clark" heroName="Superman">
         <button>Action</button>
       </Greet> */}
-      <Greet name="Bob"  heroName="The Builder" />
-      <Welcome name="Bruce" heroName="Hulk" />
+      {/* {<Greet name="Bob"  heroName="The Builder" />} */}
+      {/* {<Welcome name="Bruce" heroName="Hulk" />} */}
       {/*<Welcome name="Clark" heroName="Superman" />
       <Welcome name="Bob" heroName="The Builder" /> */}
       {/*<Hello />*/}
