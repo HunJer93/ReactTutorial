@@ -3,7 +3,7 @@ import React from 'react'
 import Person from './Person'
 
 function NameList() {
-    //const names = ['Bruce', 'Clark', 'Diana']
+    const names = ['Bruce', 'Clark', 'Diana', 'Bruce']
     
 
     const persons = [
@@ -29,9 +29,9 @@ function NameList() {
 
     //this uses a map and an arrow function to display each name in names. This is calling the Person prop to pass the info to the Person child
     //adding a key makes updating variables more efficient.
-    const personList = persons.map(person => <Person key={person.id} person={person} />)
+    const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
             
-  return <div>{personList}</div>
+  return <div>{nameList}</div>
 }
 
 export default NameList
