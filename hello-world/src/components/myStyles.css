@@ -1,0 +1,9 @@
+/* anything with a . in the front is a class and can be called in javascript.
+These classes can be called into JS when imported and referenced using 'className = ...' */
+.primary{
+    color: orange
+}
+
+.font-xl {
+    font-size: 72px;
+}
