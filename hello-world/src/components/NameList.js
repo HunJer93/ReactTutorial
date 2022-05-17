@@ -28,8 +28,8 @@ function NameList() {
     ]
 
     //this uses a map and an arrow function to display each name in names. This is calling the Person prop to pass the info to the Person child
-    persons.map(person => console.log(person))
-    const personList = persons.map(person => <Person person={person} />)
+    //adding a key makes updating variables more efficient.
+    const personList = persons.map(person => <Person key={person.id} person={person} />)
             
   return <div>{personList}</div>
 }
